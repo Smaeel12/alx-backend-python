@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
+"""type-annotated function
+"""
 from typing import List, Tuple, Any
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """ mypy to validate the following piece of code and apply any necessary
+    changes.
+    """
     zoomed_in: List = [
         item for item in lst
         for i in range(factor)
