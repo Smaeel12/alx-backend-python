@@ -4,9 +4,11 @@
 import asyncio
 import time
 
-wait_n = __import__('1-concurrent_coroutines').wait_n
+wait_n = __import__("1-concurrent_coroutines").wait_n
+
+
 def measure_time(n, max_delay):
-    """ function that measures the total execution time
+    """function that measures the total execution time
     returns total_time / n
     """
     s = time.perf_counter()
