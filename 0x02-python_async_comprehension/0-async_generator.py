@@ -6,7 +6,7 @@ from random import uniform
 from typing import AsyncGenerator
 
 
-async def async_generator() -> AsyncGenerator[float]:
+async def async_generator() -> AsyncGenerator[float, None]:
     """An asynchronous generator"""
     for _ in range(10):
         yield uniform(0, 10)
